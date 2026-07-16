@@ -1,0 +1,17 @@
+header {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.temp-logo {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  header {
+    max-width: 980px;
+  }
+}
