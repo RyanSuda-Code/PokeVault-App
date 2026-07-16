@@ -1,7 +1,10 @@
+import "./SearchBar.css";
+
 export default function SearchBar() {
   return (
     <form>
-      <input />
+      <label>Pokemon Search:</label>
+      <input type="text" placeholder="Search Pokemon here..." />
     </form>
   );
 }
