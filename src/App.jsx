@@ -1,16 +1,16 @@
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Header from "./components/Header";
+import PokemonCard from "./components/PokemonCard";
 
-function App() {
+export default function App() {
   return (
     <>
       <Header />
       <main>
         <SearchBar />
+        <PokemonCard />
       </main>
     </>
   );
 }
-
-export default App;
