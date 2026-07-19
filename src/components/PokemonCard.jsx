@@ -1,12 +1,12 @@
 import "./PokemonCard.css";
 
-export default function PokemonCard() {
+export default function PokemonCard({ pokemon }) {
+  if (!pokemon) return null;
+
   return (
     <div className="poke-card">
-      <img
-        src="https://img.pokemondb.net/sprites/x-y/normal/charmander.png"
-        className="pokeimg"
-      />
+      <img src={pokemon.sprites.front_default} className="pokeimg" />
+      <h1>{pokemon.name}</h1>
     </div>
   );
 }
