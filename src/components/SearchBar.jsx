@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function SearchBar({ onSearch, onReset }) {
   const [search, setSearch] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(search);
